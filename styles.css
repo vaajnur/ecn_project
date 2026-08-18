@@ -160,8 +160,8 @@ img {
   display: grid;
   place-items: center;
   min-height: 600px;
-  background: url('/images/corner.svg') 0 0 no-repeat, 
-              url('/images/corner-down.svg') 0 100% no-repeat;
+  background: url('images/corner.svg') 0 0 no-repeat, 
+              url('images/corner-down.svg') 0 100% no-repeat;
 }
 .primary__visual::before {
   top: 0;
@@ -256,7 +256,7 @@ img {
 }
 
 .product-card:hover {
-  background: url('/images/corner-right.svg') 100% 0 no-repeat;
+  background: url('images/corner-right.svg') 100% 0 no-repeat;
 }
 
 .product-card__link {
@@ -669,10 +669,10 @@ img {
 }
 
 .docs__document {
-    background: url('/images/corner.svg') 0 0 no-repeat, 
-              url('/images/corner-down.svg') 0 100% no-repeat,
-              url('/images/corner-right.svg') 100% 0 no-repeat,
-              url('/images/corner-right-down.svg') 100% 100% no-repeat;
+    background: url('images/corner.svg') 0 0 no-repeat, 
+              url('images/corner-down.svg') 0 100% no-repeat,
+              url('images/corner-right.svg') 100% 0 no-repeat,
+              url('images/corner-right-down.svg') 100% 100% no-repeat;
 }
 
 .docs__document {
@@ -820,7 +820,7 @@ img {
 
 .solutions__intro {
   padding: 41px 40px 0;
-  background: url('/images/corner-right.svg') 100% 0 no-repeat;
+  background: url('images/corner-right.svg') 100% 0 no-repeat;
 }
 
 .solutions__title {
