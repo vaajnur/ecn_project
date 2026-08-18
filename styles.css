@@ -603,6 +603,25 @@ img {
   place-items: center;
 }
 
+.partners__slider {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.partners__list.swiper-wrapper {
+  min-width: 0;
+  display: flex;
+  grid-template-columns: none;
+  align-items: center;
+}
+
+.partners__item.swiper-slide {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
 .partners__logo {
   width: auto;
   object-fit: contain;

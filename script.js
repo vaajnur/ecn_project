@@ -50,3 +50,24 @@
         },
       },
     });
+
+    const partnersSlider = new Swiper('.partners__slider', {
+      loop: true,
+      slidesPerView: 3.5,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1100: {
+          slidesPerView: 3.5,
+        },
+      },
+    });
