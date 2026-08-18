@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
   <header class="header">
@@ -164,14 +165,14 @@
 
     <section class="docs" aria-label="Документы и стандарты">
       <div class="docs__tabs" role="tablist" aria-label="Категории документов">
-        <button class="docs__tab docs__tab--active" type="button" role="tab" aria-selected="true" data-caption="Постановление №719 Минпромторга">Работа по ОСТ</button>
-        <button class="docs__tab" type="button" role="tab" aria-selected="false" data-caption="Альбомы различных разработчиков">Альбомы разных<br>разработчиков</button>
-        <button class="docs__tab" type="button" role="tab" aria-selected="false" data-caption="Собственные чертежи">Собственные чертежи</button>
-        <button class="docs__tab" type="button" role="tab" aria-selected="false" data-caption="Соответствие требованиям РКД">Соответствие РКД</button>
+        <button class="docs__tab docs__tab--active" data-image="doc-1.png" type="button" role="tab" aria-selected="true" data-caption="Подпись сертификата/документа">Работа по ОСТ</button>
+        <button class="docs__tab" data-image="doc-2.png"  type="button" role="tab" aria-selected="false" data-caption="Постановление №719 Минпромторга">Альбомы разных<br>разработчиков</button>
+        <button class="docs__tab" data-image="doc-1.png"  type="button" role="tab" aria-selected="false" data-caption="Подпись сертификата/документа">Собственные чертежи</button>
+        <button class="docs__tab" data-image="doc-2.png"  type="button" role="tab" aria-selected="false" data-caption="Постановление №719 Минпромторга">Соответствие РКД</button>
       </div>
       <div class="docs__viewer" role="tabpanel">
         <div class="docs__document">
-          <img class="docs__image" src="images/docs.png" alt="Постановление Министерства промышленности и торговли Российской Федерации">
+          <img class="docs__image" src="images/docs/doc-1.png" alt="Постановление Министерства промышленности и торговли Российской Федерации">
         </div>
         <p class="docs__caption">Постановление №719 Минпромторга</p>
       </div>
@@ -179,24 +180,70 @@
 
     <section class="stages" aria-labelledby="stages-title">
       <h2 class="stages__title" id="stages-title">Поэтапное производство и отлаженная логистика</h2>
-      <ol class="stages__list">
-        <li class="stage-card">
-          <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/Rectangle 1128.png" alt="Получение и обработка запроса"></div>
-          <div class="stage-card__info"><span class="stage-card__number">01</span><h3 class="stage-card__title">Получаем ваш запрос</h3></div>
-        </li>
-        <li class="stage-card">
-          <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/Rectangle 1129.png" alt="Анализ потребностей проекта"></div>
-          <div class="stage-card__info"><span class="stage-card__number">02</span><h3 class="stage-card__title">Анализируем<br>потребности</h3></div>
-        </li>
-        <li class="stage-card">
-          <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/Rectangle 1130.png" alt="Проверка технических параметров"></div>
-          <div class="stage-card__info"><span class="stage-card__number">03</span><h3 class="stage-card__title">Уточняем технические<br>параметры</h3></div>
-        </li>
-        <li class="stage-card">
-          <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/Rectangle 1131.png" alt="Оптимизация производственного решения"></div>
-          <div class="stage-card__info"><span class="stage-card__number">04</span><h3 class="stage-card__title">Оптимизируем решения</h3></div>
-        </li>
-      </ol>
+      <!-- Swiper slider for stages -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides1.png" alt="Получение и обработка запроса"></div>
+              <div class="stage-card__info"><span class="stage-card__number">01</span><h3 class="stage-card__title">Получаем ваш запрос</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides2.png" alt="Анализ потребностей проекта"></div>
+              <div class="stage-card__info"><span class="stage-card__number">02</span><h3 class="stage-card__title">Анализируем<br>потребности</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides3.png" alt="Проверка технических параметров"></div>
+              <div class="stage-card__info"><span class="stage-card__number">03</span><h3 class="stage-card__title">Уточняем технические<br>параметры</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides4.png" alt="Оптимизация производственного решения"></div>
+              <div class="stage-card__info"><span class="stage-card__number">04</span><h3 class="stage-card__title">Оптимизируем решения</h3></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides5.png" alt="Получение и обработка запроса"></div>
+              <div class="stage-card__info"><span class="stage-card__number">05</span><h3 class="stage-card__title">Оформляем коммерческое предложение</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides6.png" alt="Анализ потребностей проекта"></div>
+              <div class="stage-card__info"><span class="stage-card__number">06</span><h3 class="stage-card__title">Выставляем счет</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides7.png" alt="Проверка технических параметров"></div>
+              <div class="stage-card__info"><span class="stage-card__number">07</span><h3 class="stage-card__title">Подписываем договор</h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides8.png" alt="Оптимизация производственного решения"></div>
+              <div class="stage-card__info"><span class="stage-card__number">08</span><h3 class="stage-card__title">Запускаем производство, проект </h3></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="stage-card">
+              <div class="stage-card__visual"><img class="stage-card__image" src="images/stages/slides9.png" alt="Оптимизация производственного решения"></div>
+              <div class="stage-card__info"><span class="stage-card__number">09</span><h3 class="stage-card__title">Поставляем изделия, сдаем проект</h3></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div> -->
+      </div>
       <div class="stages__actions">
         <a class="button button--primary stages__button" href="mailto:info@ec-systems.ru">Отправить чертеж</a>
         <a class="button button--primary stages__button" href="tel:+79217400986">Заказать обратный звонок</a>
@@ -304,28 +351,8 @@
     </div>
   </footer>
 
-  <script>
-    const menuButton = document.querySelector('.header__menu-button');
-    const nav = document.querySelector('.nav');
-    menuButton.addEventListener('click', () => {
-      const opened = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', String(!opened));
-      nav.classList.toggle('nav--open');
-    });
-
-    const documentTabs = document.querySelectorAll('.docs__tab');
-    const documentCaption = document.querySelector('.docs__caption');
-    documentTabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        documentTabs.forEach((item) => {
-          item.classList.remove('docs__tab--active');
-          item.setAttribute('aria-selected', 'false');
-        });
-        tab.classList.add('docs__tab--active');
-        tab.setAttribute('aria-selected', 'true');
-        documentCaption.textContent = tab.dataset.caption;
-      });
-    });
-  </script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
