@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — ЕСН</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="ЕСН — главная">
+      <img class="brand__logo" src="images/Logo.svg" alt="">
+      <span class="brand__text">ООО «ЕСН» —<br>Инжиниринговая<br>компания для судостроения<br>и промышленности</span>
+    </a>
+    <button class="header__menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="index.html#catalog">Каталог</a>
+      <a class="nav__link nav__link--active" href="services.html">Услуги</a>
+      <a class="nav__link" href="index.html#production">Производство</a>
+      <a class="nav__link" href="index.html#blog">Блог</a>
+      <a class="nav__link" href="index.html#about">О компании</a>
+      <a class="nav__link" href="index.html#contacts">Контакты</a>
+    </nav>
+    <div class="header__contacts">
+      <a class="header__contact" href="tel:+79217400986">+7 (921) 740-09-86</a>
+      <a class="header__contact" href="mailto:info@ec-systems.ru">info@ec-systems.ru</a>
+    </div>
+  </header>
+
+  <main class="services-page">
+    <div class="services-hero">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a><span>/</span><span>Услуги</span>
+      </nav>
+      <h1 class="services-hero__title">Металлообработка по чертежам<br>и технической документации</h1>
+    </div>
+
+    <section class="services-benefits" aria-label="Преимущества">
+      <div class="services-benefit"><img src="images/layers.svg" alt=""><p>Берем в работу изделия по чертежам<br>и обозначениям разных стандартов</p></div>
+      <div class="services-benefit"><img src="images/gear.svg" alt=""><p>Упрощаем поиск и производство нестандартных<br>деталей</p></div>
+      <div class="services-benefit"><img src="images/clock.svg" alt=""><p>Сокращаем сроки и упрощаем<br>взаимодействие по проекту</p></div>
+    </section>
+
+    <section class="services-accordion" aria-label="Услуги металлообработки">
+      <article class="service-item service-item--open">
+        <button class="service-item__button" type="button" aria-expanded="true"><span class="service-item__title">Реверс-инжиниринг</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Восстановление деталей для судостроения и ремонта по образцам:<br>Инженерная проработка и подготовка к производству с учетом допусков, материалов и технических возможностей. Эффективное импортозамещение.</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Резка металла</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Быстрая и точная подготовка заготовок под дальнейшее производство, минимизирующая количество отходов материала</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Эрозионная резка</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Применяется для изготовления деталей сложной формы с высокой точностью (до микрона), где критически важна чистота поверхности</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Координатно-пробивная штамповка</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Высокопроизводительное изготовление серийных деталей с отверстиями, перфорацией и повторяющимися элементами в строгом соответствии с чертежом</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Сварочное производство</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Выполняем сварку изделий из стали и цветных металлов. Все сварочные процессы аттестованы.</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Гибка листового металла</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Придаем заготовкам нужную конфигурацию на современном оборудовании, обеспечивая точность углов и сохранение прочностных характеристик металла</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Антикоррозийная защита</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Обеспечиваем долговечность изделий в агрессивных средах. Строго соблюдаем требования РКД в части защитных покрытий.</p></div>
+      </article>
+      <article class="service-item">
+        <button class="service-item__button" type="button" aria-expanded="false"><span class="service-item__title">Фрезеровка</span><span class="service-item__arrow" aria-hidden="true">↗</span></button>
+        <div class="service-item__content"><p>Выполняем фрезерную обработку деталей по чертежам и технической документации.<br>Изготавливаем изделия сложной геометрии с высокой точностью и соблюдением заданных размеров.</p></div>
+      </article>
+    </section>
+
+    <section class="service-example__container" aria-labelledby="service-example-title">
+
+      <article class="service-example">
+        <div class="service-example__intro">
+          <h2 class="service-example__title" id="service-example-title">Реверс-инжиниринг</h2>
+          <img class="service-example__image" src="images/services/revers.png" alt="Трехмерное сканирование и восстановление детали">
+          <p class="service-example__description">Восстановление деталей для судостроения<br>и ремонта по образцам</p>
+          <a class="service-example__request" href="mailto:info@ec-systems.ru">Отправить запрос</a>
+        </div>
+        <div class="service-example__details">
+          <h3 class="service-example__subtitle">Технические параметры</h3>
+          <ul class="service-example__list">
+            <li>Анализ и измерение существующих изделий</li>
+            <li>Разработка 3D-моделей и конструкторской документации</li>
+            <li>Подготовка данных для последующего производства</li>
+            <li>Адаптация конструкции под современные технологии изготовления</li>
+          </ul>
+          <form class="service-example__form" action="#" method="post">
+            <label class="visually-hidden" for="example-name">Имя</label>
+            <input id="example-name" name="name" type="text" autocomplete="name">
+            <label class="visually-hidden" for="example-phone">Телефон</label>
+            <input id="example-phone" name="phone" type="tel" autocomplete="tel">
+            <label class="visually-hidden" for="example-email">Почта</label>
+            <input id="example-email" name="email" type="email" autocomplete="email">
+            <button type="submit">Подробнее</button>
+          </form>
+        </div>
+      </article>
+
+      <article class="service-example">
+        <div class="service-example__intro">
+          <h2 class="service-example__title" id="service-example-title">Фрезеровка</h2>
+          <img class="service-example__image" src="images/services/frezerovka.png" alt="Фрезеровка">
+          <p class="service-example__description">Изготовление деталей сложной геометрии с высокой <br>точностью по чертежам</p>
+          <a class="service-example__request" href="mailto:info@ec-systems.ru">Отправить запрос</a>
+        </div>
+        <div class="service-example__details">
+          <h3 class="service-example__subtitle">Технические параметры</h3>
+          <ul class="service-example__list">
+            <li>Обработка плоских и объемных поверхностей</li>
+            <li>Изготовление пазов, отверстий, карманов и фасок</li>
+            <li>Высокая точность позиционирования и повторяемость размеров</li>
+            <li>Работа с различными металлами и сплавами</li>
+          </ul>
+          <form class="service-example__form" action="#" method="post">
+            <label class="visually-hidden" for="example-name">Имя</label>
+            <input id="example-name" name="name" type="text" autocomplete="name">
+            <label class="visually-hidden" for="example-phone">Телефон</label>
+            <input id="example-phone" name="phone" type="tel" autocomplete="tel">
+            <label class="visually-hidden" for="example-email">Почта</label>
+            <input id="example-email" name="email" type="email" autocomplete="email">
+            <button type="submit">Подробнее</button>
+          </form>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="when-needed" aria-labelledby="when-needed-title">
+      <h2 class="when-needed__title" id="when-needed-title">Когда это может понадобиться</h2>
+      <div class="when-needed__grid">
+        <article class="when-needed__item">
+          <h3>Нужна точная обработка сложных деталей</h3>
+          <p>Используем эрозионную резку и другие технологии для задач с высокими<br>требованиями к точности</p>
+        </article>
+        <article class="when-needed__item when-needed__item--corner-bottom">
+          <h3>Требуется подготовка заготовок</h3>
+          <p>Выполняем резку и гибку металла для последующей сборки и производства<br>изделий</p>
+        </article>
+        <article class="when-needed__item when-needed__item--corner-top">
+          <h3>Необходимо серийное изготовление</h3>
+          <p>Организуем производство повторяющихся деталей с соблюдением параметров<br>и сроков</p>
+        </article>
+        <article class="when-needed__item">
+          <h3>Нужно изготовить детали по чертежу</h3>
+          <p>Если у вас есть чертеж или спецификация, мы подберем технологию<br>обработки и выполним изготовление деталей с учетом требований проекта</p>
+        </article>
+        <article class="when-needed__item">
+          <h3>Требуется комплекс работ</h3>
+          <p>Берем на себя несколько операций в рамках одного проекта: от резки<br>до сварки и покрытия</p>
+        </article>
+        <article class="when-needed__item">
+          <h3>Нет готового решения</h3>
+          <p>Помогаем разобраться с задачей, подобрать технологию и предложить<br>оптимальный вариант производства</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-choose-us" aria-labelledby="why-choose-us-title">
+      <div class="why-choose-us__intro">
+        <h2 class="why-choose-us__title" id="why-choose-us-title">Почему с нами<br>работают</h2>
+        <p class="why-choose-us__lead">Понимаем специфику<br>судостроительных проектов<br>и учитываем требования<br>к срокам, стоимости<br>и документации</p>
+      </div>
+      <div class="why-choose-us__grid">
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Vector.svg" alt="">
+          <div><h3>Конкурентная стоимость</h3><p>Подбираем оптимальные решения<br>за счет гибкой производственной<br>модели и кооперации</p></div>
+        </article>
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Vector-2.svg" alt="">
+          <div><h3>Работа с нестандартными<br>задачами</h3><p>Изготавливаем изделия<br>по различным чертежам,<br>стандартам и проектной<br>документации</p></div>
+        </article>
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Group.svg" alt="">
+          <div><h3>Соблюдение сроков</h3><p>Планируем производство и поставки<br>с учетом этапов проекта и графиков<br>заказчика</p></div>
+        </article>
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Group (1).svg" alt="">
+          <div><h3>Опыт в отрасли</h3><p>Более 20 лет работы<br>в промышленном B2B<br>и судостроении</p></div>
+        </article>
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Vector 19.svg" alt="">
+          <div><h3>Гибкие условия оплаты</h3><p>Возможна частичная оплата<br>и индивидуальные условия<br>под конкретный проект</p></div>
+        </article>
+        <article class="why-choose-us__item">
+          <img src="images/why-choose-us-icons/Vector (1).svg" alt="">
+          <div><h3>Инженерный подход</h3><p>Помогаем оптимизировать решения<br>и корректировать проектные<br>ошибки</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

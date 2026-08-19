@@ -1,7 +1,7 @@
 
     const menuButton = document.querySelector('.header__menu-button');
     const nav = document.querySelector('.nav');
-    menuButton.addEventListener('click', () => {
+    menuButton?.addEventListener('click', () => {
       const opened = menuButton.getAttribute('aria-expanded') === 'true';
       menuButton.setAttribute('aria-expanded', String(!opened));
       nav.classList.toggle('nav--open');
@@ -22,6 +22,7 @@
         documentImage.setAttribute('src', `images/docs/${tab.dataset.image.replace(/\\s+/g, '-').toLowerCase()}`);
       });
     });
+    if (document.querySelector('.mySwiper')) {
     const swiper = new Swiper('.mySwiper', {
       loop: false,
       navigation: false,
@@ -50,7 +51,9 @@
         },
       },
     });
+    }
 
+    if (document.querySelector('.partners__slider')) {
     const partnersSlider = new Swiper('.partners__slider', {
       loop: true,
       slidesPerView: 3.5,
@@ -70,4 +73,20 @@
           slidesPerView: 3.5,
         },
       },
+    });
+    }
+
+    document.querySelectorAll('.service-item__button').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.service-item');
+        const willOpen = !item.classList.contains('service-item--open');
+        document.querySelectorAll('.service-item--open').forEach((openedItem) => {
+          openedItem.classList.remove('service-item--open');
+          openedItem.querySelector('.service-item__button').setAttribute('aria-expanded', 'false');
+        });
+        if (willOpen) {
+          item.classList.add('service-item--open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
     });
