@@ -1,4 +1,14 @@
 
+async function loadComponents(root = document) {
+  const components = [...root.querySelectorAll('[data-component]')];
+  await Promise.all(components.map(async (component) => {
+    const response = await fetch(component.dataset.component);
+    if (!response.ok) throw new Error(`Component load failed: ${component.dataset.component}`);
+    component.outerHTML = await response.text();
+  }));
+}
+
+function initPage() {
     const menuButton = document.querySelector('.header__menu-button');
     const nav = document.querySelector('.nav');
     menuButton?.addEventListener('click', () => {
@@ -90,3 +100,11 @@
         }
       });
     });
+}
+
+loadComponents()
+  .then(initPage)
+  .catch((error) => {
+    console.error(error);
+    initPage();
+  });

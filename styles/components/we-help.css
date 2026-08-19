@@ -1,0 +1,43 @@
+.we-help {
+  height: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 40px;
+  color: #fff;
+  background: var(--blue);
+}
+
+.we-help__title {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.08;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.we-help__text {
+  margin: 0;
+  padding-right: 1px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .we-help {
+      height: auto;
+      display: block;
+      padding: 42px 20px;
+    }
+
+  .we-help__title {
+      font-size: 31px;
+    }
+
+  .we-help__text {
+      margin-top: 28px;
+      font-size: 17px;
+      text-align: left;
+    }
+}

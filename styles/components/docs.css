@@ -1,0 +1,130 @@
+.docs {
+  height: 685px;
+  display: grid;
+  grid-template-columns: 335px 1fr;
+  margin: 0 40px;
+  border-top: 1px solid var(--line);
+}
+
+.docs__tabs {
+  padding: 68px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--blue);
+}
+
+.docs__tab {
+  padding: 0;
+  border: 0;
+  color: #81a8b7;
+  background: transparent;
+  font-size: 23px;
+  line-height: 1.08;
+  text-align: left;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.docs__tab:hover,
+.docs__tab--active {
+  color: #fff;
+}
+
+.docs__viewer {
+  padding: 49px 39px 0;
+  border-right: 1px solid var(--line);
+}
+
+.docs__document {
+    background: url('/images/corner.svg') 0 0 no-repeat, 
+              url('/images/corner-down.svg') 0 100% no-repeat,
+              url('/images/corner-right.svg') 100% 0 no-repeat,
+              url('/images/corner-right-down.svg') 100% 100% no-repeat;
+}
+
+.docs__document {
+  position: relative;
+  /* width: min(944px, 100%); */
+  height: 521px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.docs__document::before {
+  top: 0;
+  border-radius: 0 0 0 100%;
+}
+
+.docs__document::after {
+  bottom: 0;
+  border-radius: 100% 0 0 0;
+}
+
+.docs__image {
+  object-fit: cover;
+  object-position: left top;
+  mix-blend-mode: multiply;
+}
+
+.docs__caption {
+  margin: 39px 0 0;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.primary__feature,
+.advantages__number,
+.docs__tab,
+.docs__caption,
+.stage-card__number,
+.solution-card__link,
+.request-form__control,
+.footer__description {
+  font-family: var(--font-text);
+}
+
+@media (max-width: 1100px) {
+  .docs {
+      grid-template-columns: 260px 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+  .docs {
+      height: auto;
+      display: block;
+      margin: 0 20px;
+    }
+
+  .docs__tabs {
+      padding: 30px 24px;
+      gap: 17px;
+    }
+
+  .docs__tab {
+      font-size: 20px;
+    }
+
+  .docs__viewer {
+      padding: 30px 0 35px;
+      border-right: 0;
+    }
+
+  .docs__document {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 944 / 521;
+    }
+
+  .docs__image {
+      width: 100%;
+      height: 100%;
+    }
+
+  .docs__caption {
+      margin-top: 25px;
+      font-size: 20px;
+    }
+}

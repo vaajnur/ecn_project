@@ -1,0 +1,42 @@
+<section class="request" id="contacts" aria-labelledby="request-title">
+      <div class="request__info">
+        <h2 class="request__title" id="request-title">Есть чертеж<br>или задача?</h2>
+        <p class="request__description">Рассчитаем стоимость,<br>предложим оптимальное<br>решение и сроки<br>производства под проект</p>
+        <div class="request__materials">
+          <p class="request__materials-title">Вы можете направить:</p>
+          <ul class="request__materials-list">
+            <li>Чертеж</li>
+            <li>Обозначение изделия<br>или номер</li>
+            <li>Спецификацию</li>
+            <li>Проектную<br>документацию</li>
+            <li>Краткое техническое<br>задание</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="request__content">
+        <form class="request-form" action="#" method="post">
+          <div class="request-form__fields">
+            <label class="visually-hidden" for="request-name">Имя</label>
+            <input class="request-form__control" id="request-name" name="name" type="text" placeholder="Имя" autocomplete="name">
+
+            <label class="visually-hidden" for="request-phone">Телефон</label>
+            <input class="request-form__control" id="request-phone" name="phone" type="tel" placeholder="Телефон*" autocomplete="tel" required>
+
+            <label class="visually-hidden" for="request-email">Почта</label>
+            <input class="request-form__control" id="request-email" name="email" type="email" placeholder="Почта*" autocomplete="email" required>
+
+            <label class="visually-hidden" for="request-company">Название компании</label>
+            <input class="request-form__control" id="request-company" name="company" type="text" placeholder="Название компании" autocomplete="organization">
+
+            <label class="visually-hidden" for="request-message">Опишите задачу</label>
+            <textarea class="request-form__control request-form__control--textarea" id="request-message" name="message" placeholder="Опишите задачу"></textarea>
+          </div>
+          <button class="request-form__submit" type="submit">Отправить чертеж на расчет</button>
+          <label class="request-form__consent">
+            <input class="request-form__checkbox" type="checkbox" name="privacy" required>
+            <span>Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+          </label>
+        </form>
+      </div>
+    </section>

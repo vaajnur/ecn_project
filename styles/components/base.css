@@ -1,0 +1,105 @@
+:root {
+  --blue: #005477;
+  --navy: #234469;
+  --orange: #f56805;
+  --text: #262626;
+  --muted: #6b6b6b;
+  --line: #d4d4d4;
+  --font-heading: "Advent Pro", sans-serif;
+  --font-text: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: var(--font-text);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Services */
+.services-hero {
+  padding: 28px 40px 25px;
+}
+
+.button {
+  width: 100%;
+  min-height: 46px;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+
+.button--primary {
+  color: #fff;
+  background: var(--orange);
+  transition: background .2s;
+}
+
+.button--primary:hover {
+  background: #dc5800;
+}
+
+/* Typography */
+.primary__title,
+.catalog__title,
+.product-card__title,
+.advantages__title,
+.additional-ops__title,
+.advantages__item-title,
+.operation__title,
+.partners__title,
+.stages__title,
+.stage-card__title,
+.solutions__title,
+.solution-card__title,
+.we-help__title,
+.request__title,
+.footer__heading {
+  font-family: var(--font-heading);
+}

@@ -1,0 +1,131 @@
+.partners {
+  height: 280px;
+  display: grid;
+  grid-template-columns: 335px minmax(0, 1fr);
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.partners__heading {
+  align-self: center;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--line);
+}
+
+.partners__title {
+  margin: 0;
+  color: var(--blue);
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.partners__list {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  align-items: center;
+  list-style: none;
+}
+
+.partners__item {
+  display: grid;
+  place-items: center;
+}
+
+.partners__slider {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.partners__list.swiper-wrapper {
+  min-width: 0;
+  display: flex;
+  grid-template-columns: none;
+  align-items: center;
+}
+
+.partners__item.swiper-slide {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.partners__logo {
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+.partners__logo--gazprom {
+  width: 152px;
+  height: 77px;
+}
+
+.partners__logo--tbank {
+  width: 242px;
+  height: 81px;
+}
+
+.partners__logo--megafon {
+  width: 220px;
+  height: 75px;
+}
+
+.partners__logo--rosa {
+  width: 155px;
+  height: 118px;
+}
+
+@media (max-width: 1100px) {
+  .partners {
+      grid-template-columns: 260px 1fr;
+    }
+
+  .partners__list {
+      min-width: 900px;
+      grid-template-columns: repeat(4, 225px);
+    }
+}
+
+@media (max-width: 760px) {
+  .partners {
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 65px 20px 50px;
+    }
+
+  .partners__heading {
+      height: auto;
+      padding-bottom: 30px;
+      border-right: 0;
+    }
+
+  .partners__title {
+      font-size: 31px;
+    }
+
+  .partners__list {
+      min-width: 0;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px 15px;
+    }
+
+  .partners__item {
+      min-width: 0;
+      height: 100px;
+    }
+
+  .partners__logo {
+      max-width: 88%;
+      height: auto;
+      max-height: 90px;
+    }
+}
