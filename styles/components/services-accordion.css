@@ -10,15 +10,8 @@
   overflow: hidden;
 }
 
-.service-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 27px;
-  height: 27px;
-  background: linear-gradient(45deg, transparent 49%, var(--blue) 50%);
-  pointer-events: none;
+.service-item:hover {
+  background: url("/images/corner-right.svg") no-repeat right top;
 }
 
 .service-item__button {
@@ -41,7 +34,12 @@
   font-weight: 500;
 }
 
+.service-item--open .service-item__arrow {
+  display: block;
+}
+
 .service-item__arrow {
+  display: none;
   color: #c9c9c9;
   font-size: 22px;
 }

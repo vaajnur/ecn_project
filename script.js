@@ -8,6 +8,32 @@ async function loadComponents(root = document) {
   }));
 }
 
+async function renderRepeatedComponents(root = document) {
+  const containers = [...root.querySelectorAll('[data-repeat-component][data-repeat-data]')];
+  await Promise.all(containers.map(async (container) => {
+    const [templateResponse, dataResponse] = await Promise.all([
+      fetch(container.dataset.repeatComponent),
+      fetch(container.dataset.repeatData),
+    ]);
+
+    if (!templateResponse.ok || !dataResponse.ok) {
+      throw new Error(`Repeated component load failed: ${container.dataset.repeatComponent}`);
+    }
+
+    const template = await templateResponse.text();
+    const items = await dataResponse.json();
+    container.outerHTML = items.map((item) => {
+      const values = {
+        ...item,
+        parameters: Array.isArray(item.parameters)
+          ? item.parameters.map((parameter) => `<li>${parameter}</li>`).join('')
+          : '',
+      };
+      return template.replace(/{{(\w+)}}/g, (_, key) => values[key] ?? '');
+    }).join('');
+  }));
+}
+
 function initPage() {
     const menuButton = document.querySelector('.header__menu-button');
     const nav = document.querySelector('.nav');
@@ -103,6 +129,7 @@ function initPage() {
 }
 
 loadComponents()
+  .then(() => renderRepeatedComponents())
   .then(initPage)
   .catch((error) => {
     console.error(error);

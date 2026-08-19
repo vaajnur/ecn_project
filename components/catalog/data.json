@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Кабельные<br>лотки",
+    "image": "images/products/lks 6.png",
+    "imageAlt": "Кабельные лотки",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Кабельные лотки<br>лестничного типа",
+    "image": "images/products/4D5A6954-4 1.png",
+    "imageAlt": "Кабельные лотки лестничного типа",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Заливные<br>кабельные проходки",
+    "image": "images/products/6c838c5e-85a3-4d99-acae-8d252e0f2f45-2 1.png",
+    "imageAlt": "Заливные кабельные проходки",
+    "href": "#",
+    "modifier": "product-card--accent"
+  },
+  {
+    "title": "Кабельные мосты,<br>лотки, стойки,<br>фундаменты, кницы",
+    "image": "images/products/nzy0k0eehxdq0r7t7wp9sm3pfwz0lr2b 9.png",
+    "imageAlt": "Кабельные мосты, лотки, стойки, фундаменты, кницы",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Кабельные<br>и трубные подвески",
+    "image": "images/products/63c65c34-0143-11ea-91d8-0050560111bc.1695892300.jpg.420x420f 2 8.png",
+    "imageAlt": "Кабельные и трубные подвески",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Перемычки, планки,<br>шпильки и бонки<br>заземления",
+    "image": "images/products/prohodki_312 1 6-Photoroom 1.png",
+    "imageAlt": "Перемычки, планки, шпильки и бонки заземления",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Ленты, скрепы<br>и стяжки Fortisflex",
+    "image": "images/products/i8eej53br7zh8u7243mt1wl2r1dnqv23 4.png",
+    "imageAlt": "Ленты, скрепы и стяжки Fortisflex",
+    "href": "#",
+    "modifier": ""
+  },
+  {
+    "title": "Прочие элементы,<br>применяемые<br>в судостроении<br>и судоремонте",
+    "image": "images/products/6c838c5e-85a3-4d99-acae-8d252e0f2f45-2 1-1.png",
+    "imageAlt": "Прочие элементы, применяемые в судостроении и судоремонте",
+    "href": "#",
+    "modifier": ""
+  }
+]

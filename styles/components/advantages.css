@@ -157,6 +157,7 @@
       min-height: 0;
       grid-template-columns: 55px 1fr;
       padding: 24px 0;
+      margin-left: 0 !important;
     }
 
   .advantages__number {

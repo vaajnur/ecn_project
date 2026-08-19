@@ -1,57 +1,6 @@
-<section class="service-example__container" aria-labelledby="service-example-title">
-
-      <article class="service-example">
-        <div class="service-example__intro">
-          <h2 class="service-example__title" id="service-example-title">Реверс-инжиниринг</h2>
-          <img class="service-example__image" src="images/services/revers.png" alt="Трехмерное сканирование и восстановление детали">
-          <p class="service-example__description">Восстановление деталей для судостроения<br>и ремонта по образцам</p>
-          <a class="service-example__request" href="mailto:info@ec-systems.ru">Отправить запрос</a>
-        </div>
-        <div class="service-example__details">
-          <h3 class="service-example__subtitle">Технические параметры</h3>
-          <ul class="service-example__list">
-            <li>Анализ и измерение существующих изделий</li>
-            <li>Разработка 3D-моделей и конструкторской документации</li>
-            <li>Подготовка данных для последующего производства</li>
-            <li>Адаптация конструкции под современные технологии изготовления</li>
-          </ul>
-          <form class="service-example__form" action="#" method="post">
-            <label class="visually-hidden" for="example-name">Имя</label>
-            <input id="example-name" name="name" type="text" autocomplete="name">
-            <label class="visually-hidden" for="example-phone">Телефон</label>
-            <input id="example-phone" name="phone" type="tel" autocomplete="tel">
-            <label class="visually-hidden" for="example-email">Почта</label>
-            <input id="example-email" name="email" type="email" autocomplete="email">
-            <button type="submit">Подробнее</button>
-          </form>
-        </div>
-      </article>
-
-      <article class="service-example">
-        <div class="service-example__intro">
-          <h2 class="service-example__title" id="service-example-title">Фрезеровка</h2>
-          <img class="service-example__image" src="images/services/frezerovka.png" alt="Фрезеровка">
-          <p class="service-example__description">Изготовление деталей сложной геометрии с высокой <br>точностью по чертежам</p>
-          <a class="service-example__request" href="mailto:info@ec-systems.ru">Отправить запрос</a>
-        </div>
-        <div class="service-example__details">
-          <h3 class="service-example__subtitle">Технические параметры</h3>
-          <ul class="service-example__list">
-            <li>Обработка плоских и объемных поверхностей</li>
-            <li>Изготовление пазов, отверстий, карманов и фасок</li>
-            <li>Высокая точность позиционирования и повторяемость размеров</li>
-            <li>Работа с различными металлами и сплавами</li>
-          </ul>
-          <form class="service-example__form" action="#" method="post">
-            <label class="visually-hidden" for="example-name">Имя</label>
-            <input id="example-name" name="name" type="text" autocomplete="name">
-            <label class="visually-hidden" for="example-phone">Телефон</label>
-            <input id="example-phone" name="phone" type="tel" autocomplete="tel">
-            <label class="visually-hidden" for="example-email">Почта</label>
-            <input id="example-email" name="email" type="email" autocomplete="email">
-            <button type="submit">Подробнее</button>
-          </form>
-        </div>
-      </article>
-
-    </section>
+<section class="service-example__container" aria-label="Примеры услуг">
+  <div
+    data-repeat-component="components/service-examples/card.html"
+    data-repeat-data="components/service-examples/data.json"
+  ></div>
+</section>

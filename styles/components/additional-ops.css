@@ -162,7 +162,7 @@
     }
 
   .operation__text br {
-      display: none;
+      /* display: none; */
     }
 
   .additional-ops__button {

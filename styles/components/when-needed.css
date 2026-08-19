@@ -27,6 +27,14 @@
   overflow: hidden;
 }
 
+.when-needed__item:nth-child(odd):hover { 
+  background: url("/images/corner-right.svg") no-repeat right top;
+}
+
+.when-needed__item:nth-child(even):hover { 
+  background: url("/images/corner-right-down.svg") no-repeat right bottom;
+}
+
 .when-needed__item h3 {
   margin: 0;
   font-size: 23px;
@@ -40,26 +48,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
-}
-
-.when-needed__item--corner-bottom::after,
-.when-needed__item--corner-top::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 28px;
-  height: 28px;
-  background: var(--blue);
-}
-
-.when-needed__item--corner-bottom::after {
-  bottom: 0;
-  border-radius: 28px 0 0;
-}
-
-.when-needed__item--corner-top::after {
-  top: 0;
-  border-radius: 0 0 0 28px;
 }
 
 @media (max-width: 900px) {
