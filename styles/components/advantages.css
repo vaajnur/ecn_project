@@ -32,8 +32,16 @@
   font-size: 20px;
 }
 
+.advantages__subtitle--aboutus {
+  margin-top: 0px;
+}
+
 .advantages__visual {
   padding: 31px 43px 0 40px;
+}
+
+.advantages__visual--aboutus {
+    padding: 0 40px;
 }
 
 .advantages__image {
