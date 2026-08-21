@@ -159,8 +159,8 @@
 .manufacture-how-it-org__title {
   margin: 0;
   color: var(--blue);
-  font-size: 38px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -246,3 +246,120 @@
     font-size: 18px;
   }
 }
+
+/* manufacture-for-employer */
+
+.manufacture-for-employer {
+  padding: 100px 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.manufacture-for-employer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.manufacture-for-employer__title {
+  margin: 0;
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.manufacture-for-employer__description {
+  margin: 28px 0 40px;
+  color: #858585;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: var(--font-text);
+  max-width: 600px;
+}
+
+.manufacture-for-employer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.manufacture-for-employer__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.manufacture-for-employer__num {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: #b0b0b0;
+  line-height: 1;
+  min-width: 45px;
+}
+
+.manufacture-for-employer__item-title {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.manufacture-for-employer__item-text {
+  margin: 0;
+  color: #858585;
+  font-size: 15px;
+  line-height: 1.25;
+  font-family: var(--font-text);
+}
+
+.manufacture-for-employer__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.manufacture-for-employer__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .manufacture-for-employer {
+    padding: 70px 20px;
+  }
+
+  .manufacture-for-employer__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .manufacture-for-employer__title {
+    font-size: 31px;
+  }
+
+  .manufacture-for-employer__item {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .manufacture-for-employer__num {
+    font-size: 24px;
+    min-width: 35px;
+  }
+
+  .manufacture-for-employer__item-title {
+    font-size: 18px;
+  }
+}
+

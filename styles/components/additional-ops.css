@@ -22,7 +22,8 @@
 
 .additional-ops__title {
   margin: 0;
-  font-size: 38px;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1.05;
   text-transform: uppercase;
   letter-spacing: -.7px;

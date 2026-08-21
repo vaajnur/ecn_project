@@ -12,7 +12,8 @@
 }
 
 .catalog__title {
-  font-size: 38px;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -1.2px;
 }
