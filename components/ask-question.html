@@ -1,0 +1,25 @@
+<div class="ask-question" id="ask-question" hidden aria-hidden="true">
+  <div class="ask-question__overlay" data-ask-question-close></div>
+  <div class="ask-question__dialog" role="dialog" aria-modal="true" aria-labelledby="ask-question-title">
+    <button class="ask-question__close" type="button" aria-label="Закрыть" data-ask-question-close>&times;</button>
+    <h2 class="ask-question__title" id="ask-question-title">Не нашли ответ в статье?</h2>
+    <p class="ask-question__subtitle">Задайте вопрос специалистам — поможем разобраться</p>
+    <form class="ask-question__form" action="#" method="post">
+      <label class="visually-hidden" for="ask-question-name">Имя</label>
+      <input class="ask-question__control" id="ask-question-name" name="name" type="text" placeholder="Имя" autocomplete="name">
+      <label class="visually-hidden" for="ask-question-phone">Телефон</label>
+      <input class="ask-question__control" id="ask-question-phone" name="phone" type="tel" placeholder="Телефон*" autocomplete="tel" required>
+      <label class="visually-hidden" for="ask-question-email">Почта</label>
+      <input class="ask-question__control" id="ask-question-email" name="email" type="email" placeholder="Почта*" autocomplete="email" required>
+      <label class="visually-hidden" for="ask-question-company">Название компании</label>
+      <input class="ask-question__control" id="ask-question-company" name="company" type="text" placeholder="Название компании" autocomplete="organization">
+      <label class="visually-hidden" for="ask-question-message">Вопрос</label>
+      <textarea class="ask-question__control ask-question__control--textarea" id="ask-question-message" name="message" placeholder="Вопрос"></textarea>
+      <button class="ask-question__submit" type="submit">Отправить запрос</button>
+      <label class="ask-question__consent">
+        <input class="ask-question__checkbox" type="checkbox" name="privacy" required>
+        <span>Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+      </label>
+    </form>
+  </div>
+</div>

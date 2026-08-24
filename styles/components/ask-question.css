@@ -1,0 +1,138 @@
+.ask-question {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.ask-question[hidden] {
+  display: none;
+}
+
+.ask-question__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+}
+
+.ask-question__dialog {
+  position: relative;
+  width: min(100%, 420px);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding: 36px 36px 28px;
+  background: #fff;
+  color: var(--text);
+}
+
+.ask-question__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  border: 0;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ask-question__title {
+  margin: 0;
+  padding-right: 24px;
+  color: var(--blue);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.ask-question__subtitle {
+  margin: 12px 0 0;
+  color: #858585;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.ask-question__form {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.ask-question__control {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--line);
+  outline: 0;
+  color: var(--text);
+  background: #fff;
+  font: 14px var(--font-text), sans-serif;
+}
+
+.ask-question__control:required {
+  border-color: #f55;
+}
+
+.ask-question__control:focus {
+  border-color: var(--orange);
+}
+
+.ask-question__control::placeholder {
+  color: #b8b8b8;
+}
+
+.ask-question__control--textarea {
+  height: 120px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.ask-question__submit {
+  width: 100%;
+  height: 50px;
+  margin-top: 4px;
+  border: 0;
+  color: #fff;
+  background: var(--orange);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ask-question__submit:hover {
+  background: #dc5800;
+}
+
+.ask-question__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 4px;
+  color: #858585;
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.ask-question__consent a {
+  border-bottom: 1px solid currentColor;
+}
+
+.ask-question__checkbox {
+  appearance: none;
+  flex: 0 0 11px;
+  width: 11px;
+  height: 11px;
+  margin: 1px 0 0;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.ask-question__checkbox:checked {
+  background: var(--orange);
+  box-shadow: inset 0 0 0 2px #fff;
+}

@@ -183,6 +183,24 @@ function initPage() {
     el.addEventListener('click', closeCallBack);
   });
 
+  const askQuestionModal = document.getElementById('ask-question');
+  const openAskQuestion = () => {
+    if (!askQuestionModal) return;
+    askQuestionModal.hidden = false;
+    askQuestionModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeAskQuestion = () => {
+    if (!askQuestionModal) return;
+    askQuestionModal.hidden = true;
+    askQuestionModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.querySelector('[data-ask-question-open]')?.addEventListener('click', openAskQuestion);
+  askQuestionModal?.querySelectorAll('[data-ask-question-close]').forEach((el) => {
+    el.addEventListener('click', closeAskQuestion);
+  });
+
   document.querySelectorAll('.service-item__button').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.service-item');
