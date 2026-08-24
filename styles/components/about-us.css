@@ -354,6 +354,32 @@
   border-right: 1px solid var(--line);
 }
 
+/** Media queries
+*/
+
+.advantages__list--aboutus {
+
+  .advantages__item:nth-child(1) {
+    margin-left: 175px;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin-left: 145px;
+  }
+
+  .advantages__item:nth-child(3) {
+    margin-left: 105px;
+  }
+
+  .advantages__item:nth-child(4) {
+    margin-left: 80px;
+  }
+
+  .advantages__item:nth-child(5) {
+    margin-left: 40px;
+  }
+}
+
 @media (max-width: 1100px) {
   .trusted-partner {
     grid-template-columns: 320px 1fr;
