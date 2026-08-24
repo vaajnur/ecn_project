@@ -1,0 +1,131 @@
+.call-back-form {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.call-back-form[hidden] {
+  display: none;
+}
+
+.call-back-form__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+}
+
+.call-back-form__dialog {
+  position: relative;
+  width: min(100%, 420px);
+  padding: 40px 36px 32px;
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+}
+
+.call-back-form__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.call-back-form__close:hover {
+  opacity: 1;
+}
+
+.call-back-form__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.call-back-form__subtitle {
+  margin: 16px 0 0;
+  color: #cae0e8;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.call-back-form__form {
+  margin-top: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.call-back-form__control {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  outline: 0;
+  color: var(--text);
+  background: #fff;
+  font: 14px var(--font-text), sans-serif;
+}
+
+.call-back-form__control:required {
+  border-color: #f55;
+}
+
+.call-back-form__control::placeholder {
+  color: #b8b8b8;
+}
+
+.call-back-form__submit {
+  width: 100%;
+  height: 50px;
+  margin-top: 4px;
+  border: 0;
+  color: #fff;
+  background: var(--orange);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.call-back-form__submit:hover {
+  background: #dc5800;
+}
+
+.call-back-form__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 4px;
+  color: #cae0e8;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+.call-back-form__consent a {
+  border-bottom: 1px solid currentColor;
+}
+
+.call-back-form__checkbox {
+  appearance: none;
+  flex: 0 0 11px;
+  width: 11px;
+  height: 11px;
+  margin: 1px 0 0;
+  border: 1px solid #a9ccd8;
+  background: transparent;
+}
+
+.call-back-form__checkbox:checked {
+  background: var(--orange);
+  box-shadow: inset 0 0 0 2px var(--blue);
+}

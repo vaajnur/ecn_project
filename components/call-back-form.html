@@ -1,0 +1,19 @@
+<div class="call-back-form" id="call-back-form" hidden aria-hidden="true">
+  <div class="call-back-form__overlay" data-call-back-close></div>
+  <div class="call-back-form__dialog" role="dialog" aria-modal="true" aria-labelledby="call-back-form-title">
+    <button class="call-back-form__close" type="button" aria-label="Закрыть" data-call-back-close>&times;</button>
+    <h2 class="call-back-form__title" id="call-back-form-title">Заказать обратный звонок</h2>
+    <p class="call-back-form__subtitle">Оставьте номер телефона — мы перезвоним и ответим на все вопросы</p>
+    <form class="call-back-form__form" action="#" method="post">
+      <label class="visually-hidden" for="call-back-name">Имя</label>
+      <input class="call-back-form__control" id="call-back-name" name="name" type="text" placeholder="Имя" autocomplete="name">
+      <label class="visually-hidden" for="call-back-phone">Телефон</label>
+      <input class="call-back-form__control" id="call-back-phone" name="phone" type="tel" placeholder="Телефон*" autocomplete="tel" required>
+      <button class="call-back-form__submit" type="submit">Связаться со мной</button>
+      <label class="call-back-form__consent">
+        <input class="call-back-form__checkbox" type="checkbox" name="privacy" required>
+        <span>Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+      </label>
+    </form>
+  </div>
+</div>

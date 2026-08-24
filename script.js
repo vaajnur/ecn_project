@@ -139,6 +139,24 @@ function initPage() {
     });
   }
 
+  const callBackModal = document.getElementById('call-back-form');
+  const openCallBack = () => {
+    if (!callBackModal) return;
+    callBackModal.hidden = false;
+    callBackModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeCallBack = () => {
+    if (!callBackModal) return;
+    callBackModal.hidden = true;
+    callBackModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.querySelector('[data-call-back-open]')?.addEventListener('click', openCallBack);
+  callBackModal?.querySelectorAll('[data-call-back-close]').forEach((el) => {
+    el.addEventListener('click', closeCallBack);
+  });
+
   document.querySelectorAll('.service-item__button').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.service-item');

@@ -109,6 +109,11 @@
   padding-top: 40px;
 }
 
+.contacts__action .button {
+  border: 0;
+  cursor: pointer;
+}
+
 .contacts__description,
 .contacts__office-title,
 .contacts__address,
