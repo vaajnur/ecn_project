@@ -35,6 +35,32 @@ async function renderRepeatedComponents(root = document) {
 }
 
 function initPage() {
+  // Blog tabs interaction
+  const blogTabLinks = document.querySelectorAll('.blog-section__tab-link');
+  const blogGrid = document.querySelector('.blog-section__grid');
+  const blogArticles = blogGrid ? blogGrid.querySelectorAll('.blog-card') : [];
+  blogTabLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Deactivate all tab items
+      document.querySelectorAll('.blog-section__tab-item').forEach((item) => {
+        item.classList.remove('blog-section__tab-item--active');
+      });
+      // Activate the clicked tab's parent li
+      link.closest('.blog-section__tab-item')?.classList.add('blog-section__tab-item--active');
+      const tabName = link.textContent.trim().toLowerCase();
+      // Show/hide articles based on category matching tab name
+      blogArticles.forEach((article) => {
+        const categoryEl = article.querySelector('.blog-card__category');
+        const category = categoryEl ? categoryEl.textContent.trim().toLowerCase() : '';
+        if (category && category.includes(tabName)) {
+          article.style.display = '';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
   const menuButton = document.querySelector('.header__menu-button');
   const nav = document.querySelector('.nav');
   menuButton?.addEventListener('click', () => {
