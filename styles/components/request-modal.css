@@ -1,0 +1,72 @@
+.request-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.request-modal[hidden] {
+  display: none;
+}
+
+.request-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+}
+
+.request-modal__dialog {
+  position: relative;
+  width: min(100%, 1100px);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  background: #fff;
+}
+
+.request-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 2;
+  border: 0;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.request-modal__close:hover {
+  color: var(--text);
+}
+
+.request-modal .request {
+  height: auto;
+  min-height: 0;
+}
+
+.request-modal .request__content {
+  padding: 60px 40px 60px 80px;
+}
+
+.request-modal .request-form {
+  height: auto;
+  padding: 40px 48px 32px;
+}
+
+@media (max-width: 900px) {
+  .request-modal__dialog {
+    width: 100%;
+  }
+
+  .request-modal .request__content {
+    padding: 40px 20px 50px;
+  }
+
+  .request-modal .request-form {
+    padding: 28px 20px;
+  }
+}

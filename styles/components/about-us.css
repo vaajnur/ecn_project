@@ -146,7 +146,7 @@
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.75);
   font-family: var(--font-text);
-  max-width: 320px;
+  max-width: 420px;
 }
 
 .trusted-partner__list {

@@ -1,0 +1,48 @@
+<div class="request-modal" id="request-modal" hidden aria-hidden="true">
+  <div class="request-modal__overlay" data-request-modal-close></div>
+  <div class="request-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="request-modal-title">
+    <button class="request-modal__close" type="button" aria-label="Закрыть" data-request-modal-close>&times;</button>
+    <section class="request" aria-labelledby="request-modal-title">
+      <div class="request__info">
+        <h2 class="request__title" id="request-modal-title">Есть чертеж<br>или задача?</h2>
+        <p class="request__description">Рассчитаем стоимость,<br>предложим оптимальное<br>решение и сроки<br>производства под проект</p>
+        <div class="request__materials">
+          <p class="request__materials-title">Вы можете направить:</p>
+          <ul class="request__materials-list">
+            <li>Чертеж</li>
+            <li>Обозначение изделия<br>или номер</li>
+            <li>Спецификацию</li>
+            <li>Проектную<br>документацию</li>
+            <li>Краткое техническое<br>задание</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="request__content">
+        <form class="request-form" action="#" method="post">
+          <div class="request-form__fields">
+            <label class="visually-hidden" for="request-modal-name">Имя</label>
+            <input class="request-form__control" id="request-modal-name" name="name" type="text" placeholder="Имя" autocomplete="name">
+
+            <label class="visually-hidden" for="request-modal-phone">Телефон</label>
+            <input class="request-form__control" id="request-modal-phone" name="phone" type="tel" placeholder="Телефон*" autocomplete="tel" required>
+
+            <label class="visually-hidden" for="request-modal-email">Почта</label>
+            <input class="request-form__control" id="request-modal-email" name="email" type="email" placeholder="Почта*" autocomplete="email" required>
+
+            <label class="visually-hidden" for="request-modal-company">Название компании</label>
+            <input class="request-form__control" id="request-modal-company" name="company" type="text" placeholder="Название компании" autocomplete="organization">
+
+            <label class="visually-hidden" for="request-modal-message">Опишите задачу</label>
+            <textarea class="request-form__control request-form__control--textarea" id="request-modal-message" name="message" placeholder="Опишите задачу"></textarea>
+          </div>
+          <button class="request-form__submit" type="submit">Отправить чертеж на расчет</button>
+          <label class="request-form__consent">
+            <input class="request-form__checkbox" type="checkbox" name="privacy" required>
+            <span>Нажимая на кнопку, я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+          </label>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
