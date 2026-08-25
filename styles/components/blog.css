@@ -205,6 +205,21 @@
   color: #747474;
 }
 
+.blog-detail__more-button {
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background 0.2s, border-color 0.2s; 
+  background: rgba(217, 217, 217, 0.15);
+  /* Серый линии */
+  border: 1px solid #D2D2D2;
+}
+
 @media (max-width: 1024px) {
   .blog-section__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -285,6 +300,52 @@
   .blog-ask-question__button {
     min-width: 0;
     width: 100%;
+  }
+}
+
+/* Blog Popular */
+.blog-popular {
+  padding: 60px 40px 80px;
+}
+
+.blog-popular__title {
+  margin: 0 0 32px;
+  color: var(--blue);
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.blog-popular__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.blog-popular .blog-card__title {
+  color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  .blog-popular__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-popular {
+    padding: 40px 20px 60px;
+  }
+
+  .blog-popular__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .blog-popular__grid {
+    grid-template-columns: 1fr;
   }
 }
 
