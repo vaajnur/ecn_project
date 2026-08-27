@@ -20,11 +20,13 @@
   border: 0;
   color: #81a8b7;
   background: transparent;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.08;
   text-align: left;
   cursor: pointer;
   transition: color .2s;
+  font-weight: 500;
+  font-family: var(--font-heading) !important;
 }
 
 .docs__tab:hover,
@@ -70,8 +72,10 @@
 
 .docs__caption {
   margin: 39px 0 0;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1;
+  font-weight: 500;
+  font-family: var(--font-heading) !important;
 }
 
 .primary__feature,

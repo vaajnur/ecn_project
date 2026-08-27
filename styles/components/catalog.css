@@ -69,9 +69,9 @@
 .product-card__title {
   margin: 0;
   padding: 10px 9px;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.18;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .product-card__arrow {
@@ -80,6 +80,17 @@
   place-items: center;
   border-left: 1px solid #aeb5b8;
   color: transparent;
+  background: linear-gradient(#aeb5b8, #aeb5b8) 50% 0 / 1px 33px no-repeat;
+}
+
+.product-card__arrow::before,
+.product-card__arrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #aeb5b8;
 }
 
 .product-card__arrow::before {

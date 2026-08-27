@@ -85,16 +85,27 @@ function initPage() {
     });
   });
 
+  if (document.querySelector('.primary__feature-slider')) {
+    new Swiper('.primary__feature-slider', {
+      loop: true,
+      slidesPerView: 1,
+      allowTouchMove: true,
+      navigation: {
+        nextEl: '.primary__feature-arrow',
+      },
+    });
+  }
+
   if (document.querySelector('.mySwiper')) {
     const swiper = new Swiper('.mySwiper', {
       loop: false,
       navigation: false,
       slidesPerView: 4,
-      spaceBetween: 10,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      spaceBetween: 0,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -110,7 +121,7 @@ function initPage() {
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 10,
+          spaceBetween: 0,
         },
       },
     });
@@ -236,6 +247,11 @@ function initPage() {
       }
     });
   });
+
+  if (location.pathname == '/') {
+    document.querySelector(".breadcrumbs").style.display = "none";
+  }
+
 }
 
 loadComponents()

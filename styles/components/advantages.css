@@ -12,9 +12,13 @@
 
 .advantages__title,
 .additional-ops__title,
-.advantages__item-title,
 .operation__title {
   font-weight: 400;
+}
+
+
+.advantages__item-title {
+  font-weight: 500;
 }
 
 .advantages__title {
@@ -89,6 +93,8 @@
 .advantages__number {
   color: #c4c4c4;
   font-size: 36px;
+  font-family: var(--font-heading) !important;
+  font-weight: 500;
 }
 
 .advantages__item-title {

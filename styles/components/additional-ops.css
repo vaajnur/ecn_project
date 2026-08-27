@@ -1,8 +1,6 @@
-.advantages__title,
 .additional-ops__title,
-.advantages__item-title,
 .operation__title {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .additional-ops {
@@ -74,10 +72,10 @@
 
 .operation__text {
   margin: 19px 0 0;
-  color: #3a3a3a;
+  color: var(--grey-text);
   font-size: 16px;
   line-height: 1.18;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .additional-ops__button {

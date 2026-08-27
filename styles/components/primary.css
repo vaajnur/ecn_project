@@ -5,7 +5,7 @@
 }
 
 .primary__intro {
-  padding: 31px 40px 0;
+  padding: 31px 40px 60px;
   border-right: 1px solid var(--line);
 }
 
@@ -34,7 +34,6 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 600px;
   background: url('/images/corner.svg') 0 0 no-repeat, 
               url('/images/corner-down.svg') 0 100% no-repeat;
 }
@@ -58,7 +57,7 @@
 .primary__action {
   display: flex;
   align-items: center;
-  padding: 40px 25px 40px 40px;
+  padding: 30px 25px 30px 40px;
   border-top: 1px solid var(--line);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -76,37 +75,16 @@
   overflow: hidden;
 }
 
-.primary__feature-marquee {
+.primary__feature-slider {
   flex: 1;
   min-width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  margin: 0;
 }
 
-.primary__feature-marquee-track {
-  display: inline-flex;
-  gap: 48px;
-  width: max-content;
-  animation: primary-feature-marquee 18s linear infinite;
-}
-
-.primary__feature-marquee-track > span {
-  flex: 0 0 auto;
-}
-
-.primary__feature:hover .primary__feature-marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes primary-feature-marquee {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(calc(-50% - 24px));
-  }
+.primary__feature-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  line-height: 1.25;
 }
 
 .primary__feature-arrow {
@@ -115,10 +93,13 @@
   height: 31px;
   display: grid;
   place-items: center;
+  padding: 0;
   border: 1px solid var(--line);
+  background: transparent;
   color: #c6c6c6;
   font-size: 27px;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .primary__feature,
