@@ -88,6 +88,10 @@ function initPage() {
   if (document.querySelector('.primary__feature-slider')) {
     new Swiper('.primary__feature-slider', {
       loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       slidesPerView: 1,
       allowTouchMove: true,
       navigation: {
@@ -99,13 +103,16 @@ function initPage() {
   if (document.querySelector('.mySwiper')) {
     const swiper = new Swiper('.mySwiper', {
       loop: false,
-      navigation: false,
+      // navigation: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+      },
       slidesPerView: 4,
       spaceBetween: 0,
-      // autoplay: {
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -189,11 +196,25 @@ function initPage() {
     callBackModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
   };
-  document.querySelector('[data-call-back-open]')?.addEventListener('click', openCallBack);
+  document.querySelectorAll('[data-call-back-open]').forEach((el) => {
+    el.addEventListener('click', openCallBack);
+  });
   callBackModal?.querySelectorAll('[data-call-back-close]').forEach((el) => {
     el.addEventListener('click', closeCallBack);
   });
 
+  const fixedCallback = document.querySelector('.fixed-callback--wrap');
+  const primaryBlock = document.querySelector('.primary');
+  if (fixedCallback && primaryBlock) {
+    fixedCallback.hidden = false;
+    const syncFixedCallback = () => {
+      const pastPrimary = primaryBlock.getBoundingClientRect().bottom <= 0;
+      fixedCallback.classList.toggle('fixed-callback--visible', pastPrimary);
+    };
+    syncFixedCallback();
+    window.addEventListener('scroll', syncFixedCallback, { passive: true });
+    window.addEventListener('resize', syncFixedCallback);
+  }
   const askQuestionModal = document.getElementById('ask-question');
   const openAskQuestion = () => {
     if (!askQuestionModal) return;

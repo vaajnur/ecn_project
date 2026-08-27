@@ -26,5 +26,6 @@
 
 @import url('./styles/components/contacts.css');
 @import url('./styles/components/call-back-form.css');
+@import url('./styles/components/fixed-callback.css');
 @import url('./styles/components/footer.css');
 

@@ -40,6 +40,7 @@
   color: #686868;
   font-size: 16px;
   transition: color .2s;
+  font-weight: 500;
 }
 
 .nav__link:hover {
@@ -60,7 +61,9 @@
   align-items: center;
   justify-content: center;
   border-left: 1px solid var(--line);
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 500;
 }
 
 .header__menu-button {

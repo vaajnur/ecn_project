@@ -11,7 +11,7 @@
   margin: 0 0 30px;
   color: var(--blue);
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -65,12 +65,15 @@
 
 .blog-card__category {
   position: absolute;
-  top: 16px;
-  left: 16px;
-  border: 1px solid #e0e0e0;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   padding: 4px 12px;
-  font-size: 13px;
-  color: #747474;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Advent Pro', sans-serif;
+  color: #024E6E;
   background: #fff;
   z-index: 1;
 }
@@ -108,25 +111,26 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  color: #024E6E;
 }
 
 .blog-card__icon {
   width: 16px;
   height: 16px;
-  stroke: #747474;
+  stroke: #024E6E;
 }
 
 .blog-card__title {
   margin: 0 0 10px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 1.25;
   color: var(--text);
 }
 
 .blog-card__text {
   margin: 0 0 24px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   color: var(--muted);
   flex: 1;
@@ -140,7 +144,7 @@
   color: #fff;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   transition: background 0.2s;
 }
 
@@ -193,7 +197,7 @@
   background: var(--orange);
   color: #fff;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .blog-section__page-link:hover:not(.blog-section__page-link--active),
@@ -257,15 +261,15 @@
   margin: 0 0 8px;
   color: #fff;
   font-family: var(--font-heading);
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .blog-ask-question__subtitle {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0.85;
 }
 
@@ -284,6 +288,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
+  flex: 0 0 50%;
 }
 
 .blog-ask-question__button:hover {
@@ -325,7 +330,7 @@
 }
 
 .blog-popular .blog-card__title {
-  color: var(--blue);
+  /* color: var(--blue); */
 }
 
 @media (max-width: 1024px) {
